@@ -1,43 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Braxton's Portfolio</title>
-        <link rel="stylesheet" href="styles/normalize.css" />
-        <link rel="stylesheet" href="styles/main.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-    <body id = "about">
-        <header>
-            <h1>About</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href = "index.html">About</a></li>
-                <li><a href = "portfolio.html">Portfolio</a></li>
-                <li><a href = "resume.html">Resume</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h1>Braxton's Portfolio</h1>
-            <!-- Your content goes here -->
-            <img id="avatar" src = "images/avatar.JPG" />
-            <p>
-                My name is Braxton Lee, and I am a sophmore Conputer Science major at Rose-Hulman Institute of Technology
-                in Terre Haute, IN. My hometown is Honolulu, HI, where I went to `Iolani School.
-                The goal of this website is to teach you a little more about myself, my projects, and my hobbies.
-            <p>
-                When I'm not doing schoolwork, by farovite things to do are to either get outside and enjoy nature through hiking or
-                spending time at the ocean, or by making my own small programming projects. Like most other students my age, I also enjoy
-                video games, usually of the racing variety.
-            </p>
-        </main>
-        <footer>
-            You can email me at: leebt@rose-hulman.edu
-        </footer>
 
-        <script src="scripts/main.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Favorite Things</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Favorite Things</a>
+  </nav>
+  <div id="mainPage" class="container page-container">
+    <hr>
+    <h1>Favorite Number</h1>
+    <h1 id="counter">0</h1>
+    <div id="favNumberDiv" class="row mx-auto justify-content-center">
+      <div class="col-4 col-md-2">
+          <button data-amount="-1" type="button" class="btn-primary btn-block btn">-1</button>
+      </div>
+
+      <div class="col-4 col-md-2">
+          <button data-is-reset="true" type="button" class="btn-block btn btn-primary ">Reset</button>
+      </div>
+
+      <div class="col-4 col-md-2">
+          <button data-amount="1" type="button" class="btn-block btn btn-primary">+1</button>
+      </div>
+    </div>
+    <hr>
+    <h1>Favorite Color</h1>
+    <div id="favoriteColor">#800000</div>
+    <div id="favColorDiv" class="row mx-auto no-gutters justify-content-center">
+        <!-- <div class="w-100"></div> -->
+        <div class="col-3 col-md-2">
+            <button id="blueButton" type="button" class="btn-block btn btn-primary ">blue</button>
+        </div>
+  
+        <div class="col-3 col-md-2">
+            <button id="greenButton" type="button" class="btn-block btn btn-primary ">green</button>
+        </div>
+  
+        <div class="col-3 col-md-2">
+            <button id="redButton" type="button" class="btn-block btn btn-primary ">red</button>
+        </div>
+
+        <div class="col-3 col-md-2">
+            <button id="purpleButton" type="button" class="btn-block btn btn-primary ">purple</button>
+        </div>
+      </div>
+    <hr>
+
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <!-- <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script> -->
+  <script src="scripts/main.js"></script>
+</body>
+
 </html>
-
