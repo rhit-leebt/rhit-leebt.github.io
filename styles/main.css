@@ -85,7 +85,7 @@ body > header {
 body > nav {
     grid-area: nav;
     display: inline;
-    padding: 0;
+    /* padding: 0; */
     margin: auto auto;
 }
 
