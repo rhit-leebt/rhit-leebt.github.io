@@ -99,7 +99,7 @@ body > nav ul {
 
 body > nav ul li {
     display: table-cell;
-    padding: 0 2vw; /* was 2vw*/
+    /* padding: 0 2vw; */
     text-align: center;
     margin: 30% 0;
     font-size: 1.5rem;
