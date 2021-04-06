@@ -90,6 +90,7 @@ body > nav {
 
 body > nav ul {
     list-style-type: none;
+    display: table-row;
     padding-left: 0;
     margin: 0;
     height: 100%;
