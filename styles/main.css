@@ -90,14 +90,14 @@ body > nav {
 
 body > nav ul {
     list-style-type: none;
-    padding: 0;
+    padding-left: 0;
     margin: 0;
     height: 100%;
 }
 
 body > nav ul li {
     display: table-cell;
-    padding: 0 2vw;
+    padding: 0 2vw; /* was 2vw*/
     text-align: center;
     margin: 30% 0;
     font-size: 1.5rem;
